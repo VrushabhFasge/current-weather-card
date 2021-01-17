@@ -19,7 +19,7 @@ function errorHandler(error){
 }
 
 function clickHandler(){
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&appid=71f9d1b7b706baecb2189671d43b9218')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&appid={your_api_key}')
     .then(response => response.json())
     .then(json => {
         var nameValue=json['name'];
